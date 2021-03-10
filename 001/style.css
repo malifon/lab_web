@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1920px;
+    margin: auto;
+}
+header, footer{
+    background-color: yellow;
+    height: 10vh;
+    width: 100%;
+}
+.main{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.left{
+    background-color: black;
+}
+.middle{
+    background-color: blue;
+}
+.left{
+    background-color: pink;
+}
