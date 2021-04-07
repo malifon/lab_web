@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* style */
+
+
+/* container */
+
+.wrapper{
+    display: flex;
+}
+
+/* menu */
+.menu{
+    width: 150px;
+    height: 100vh;
+    background-color: #252a3a;
+    font-size: 16px;
+}
+
+.menu-compose{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 16px;
+    background-color: #1B98F8;
+    color: white;
+}
+
+.navigation__item{
+    padding: 20px;
+
+}
+
+.navigation__item-link{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation__item-link span{
+    color: #427197;
+}
+
+.navigation__item:hover{
+    background-color: #373C5A;
+    cursor: pointer;
+}
+
+.navigation__item-active{
+    background-color: #373C5A;
+}
+
+.labels__item{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.menu-labels{
+    color: #427197;
+    text-transform: uppercase;
+    font-style: thin;
+}
+
+.labels{
+    padding: 0 20px;
+}
+
+.menu-labels{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.labels__item-square_orange, .labels__item-square_green, .labels__item-square_blue{
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 2px;
+    margin: 10px 5px;
+}
+
+.labels__item-square_orange{
+    background-color: orange;
+}
+.labels__item-square_green{
+    background-color: green;
+}
+.labels__item-square_blue{
+    background-color: blue;
+}
