@@ -1,0 +1,29 @@
+@import "reset"
+@import "variables"
+@import "common"
+
+
+body
+    background-color: $background
+    font-size: 16px
+    font-family: "Roboto"
+
+.wrapper  
+    width: 1140px 
+    margin: auto
+
+
+.articles
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 5%
+.article
+    &__title
+        color: $dark-grey
+        font-size: 2em
+        display: inline-block
+        font-family: "Roboto"
+        font-weight: bold
+        margin-bottom: 15px
+    &__description
+        color: $grey
+        margin: 15px 0
