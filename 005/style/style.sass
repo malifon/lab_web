@@ -12,10 +12,93 @@ body
     width: 1140px 
     margin: auto
 
+img.background 
+    width: 100%
+    position: absolute
+    max-height: 920px
+    z-index: -1
+    object-fit: cover
+
+
+// header
+//     background-image: url("../assets/background.jpg")
+//     background-size: cover
+
+.menu, .menu-list
+    justify-content: space-between
+
+
+.banner
+    padding: 15% 0
+    color: white
+    
+.banner-title
+    font-size: 6em
+    font-family: "Roboto"
+    font-weight: 900
+.banner-subtitle
+    margin: 25px 0
+    font-size: 1.8em
+    font-family: "Aleo"
+    color: $quotas
+.banner-quotes
+    font-weight: 600
+    font-size: 1.5em
+    margin-bottom: 25px
+.banner-paragraph
+    margin-top: 1em 0
+    color: white
+    font-size: 1.2em
+    font-weight: 400
+    max-width: 62%
+    a
+        color: $dark-blue
+        transition: all .35s ease-in-out
+        text-decoration: none
+        &:hover
+            color: $orange
+.menu 
+    padding: 50px 0
+    align-items: center
+    border-bottom: 1px solid $menu-line
+    .logo 
+
+        a
+            transition: all .35s ease-in-out
+            &:hover
+                opacity: .6
+        img
+            height: 52px
+
+.menu-list
+    &__items
+        margin: 0 5px
+        font-size: 1.3em
+        a
+            font-weight: 600
+            text-decoration: none
+            color: $dark-grey
+            padding: 7px 24px
+            font-size: .9em
+            transition: all .5s ease
+            &:hover
+                background-color: $dark-grey
+                color: white
+                border-radius: 5px
+        &_active
+            a
+                color: $white
+                border-radius: 5px
+                background-color: $orange
+    
 
 .articles
     grid-template-columns: repeat(3, 1fr)
     grid-gap: 5%
+    padding: 50px 0
+    margin-top: 20%
+    border-bottom: 1px solid $grey-line
+
 .article
     &__title
         color: $dark-grey
@@ -27,3 +110,62 @@ body
     &__description
         color: $grey
         margin: 15px 0
+        line-height: 1.5em
+        font-size: 1em
+
+
+
+// about.html
+
+.about-img img
+    width: 100%
+    border: 5px solid white
+
+.about-title
+    margin: 25px 0
+    font-size: 3em
+    color: $dark-blue
+    font-weight: 600
+    display: inline-block
+
+.about-quotes
+    margin: 0 0 40px 
+    font-family: "Aleo"
+    font-size: 1.5em
+    width: 80%
+
+.about-describe 
+    justify-content: space-between
+    grid-gap: 5%
+    p
+        width: 100%
+        color: $grey
+        margin-bottom: 20px
+        font-weight: 400
+        line-height: 1.4
+
+
+
+.footer
+    padding: 50px 0 50px
+    justify-content: space-between
+
+.copyright
+    align-content: center
+    img
+        width: 45px
+        height: auto
+.copyright-text
+    float: right
+    margin-left: 10px
+    font-size: .8em
+    color: $grey-line
+
+.icons-item
+    padding: 0 5px
+    img
+        width: 30px
+        opacity: .4
+        transition: all .35s
+        &:hover
+            opacity: 1
