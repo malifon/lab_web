@@ -5,52 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selfy</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Roboto:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
 
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header>
-      <img class="background" src="./assets/background.jpg" alt="background" />
-      <section class="wrapper">
-        <nav class="menu flex">
-          <div class="logo">
-          <a href="./index.html">
-            <img src="./assets/logo.png" alt="logo" />
-          </a>
-          
-          </div>
-          <ul class="menu-list flex">
-            <li class="menu-list__items menu-list__items_active">
-              <a href="#">Home</a>
-            </li>
-            <li class="menu-list__items"><a href="./about.html">About</a></li>
-            <li class="menu-list__items"><a href="#">Styles</a></li>
-            <li class="menu-list__items"><a href="#">Gallery</a></li>
-            <li class="menu-list__items"><a href="#">Blog</a></li>
-            <li class="menu-list__items"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+    <header class="photo-header">
+      <!-- <img class="background" src="./assets/background.jpg" alt="background" /> -->
+      <div class="background-grey">
+        <section class="wrapper">
+          <nav class="menu flex">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="./assets/logo.png" alt="logo" />
+              </a>
+            </div>
+            <ul class="menu-list flex">
+              <li class="menu-list__items menu-list__items_active">
+                <a href="#">Home</a>
+              </li>
+              <li class="menu-list__items"><a href="./about.html">About</a></li>
+              <li class="menu-list__items">
+                <a href="./style.html">Styles</a>
+              </li>
+              <li class="menu-list__items">
+                <a href="./gallery.html">Gallery</a>
+              </li>
+              <li class="menu-list__items"><a href="./blog.html">Blog</a></li>
+              <li class="menu-list__items">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="menu-mobile">
+              <select name="pets" id="menu-select">
+                <option >Navigation</option>
+                <option value="./index.html">Home</option>
+                <option value="./about.html">About</option>
+                <option value="./style.html">Styles</option>
+                <option value="./gallery.html">Gallery</option>
+                <option value="./blog.html">Blog</option>
+                <option value="./contact.html">Contact</option>
+              </select>
+            </div>
+          </nav>
 
-        <div class="banner">
-          <h1 class="banner-title">You Idiots!</h1>
-          <p class="banner-subtitle">
-            These are not them! You’ve captured their stunt doubles!
-          </p>
-          <p class="banner-quotes">— Spaceballs</p>
-          <p class="banner-paragraph">
-            No more boring V-Cards, Selfy is the perfect theme for self
-            promotion. A little piece of the internet all about you, customise
-            and self express with Selfy...
-            <a href="#"> Read More</a>
-          </p>
-        </div>
-      </section>
+          <div class="banner">
+            <h1 class="banner-title">You Idiots!</h1>
+            <p class="banner-subtitle">
+              These are not them! You’ve captured their stunt doubles!
+            </p>
+            <p class="banner-quotes">— Spaceballs</p>
+            <p class="banner-paragraph">
+              No more boring V-Cards, Selfy is the perfect theme for self
+              promotion. A little piece of the internet all about you, customise
+              and self express with Selfy...
+              <a href="#"> Read More</a>
+            </p>
+          </div>
+        </section>
+      </div>
     </header>
     <section class="wrapper">
       <section class="articles grid">
@@ -118,5 +131,7 @@
         </div>
       </footer>
     </section>
-  </body>
+    <script src="./js/script.js"></script>
+ 
+ </body>
 </html>

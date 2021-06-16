@@ -27,8 +27,8 @@
             <li class="menu-list__items">
               <a href="./index.html">Home</a>
             </li>
-            <li class="menu-list__items menu-list__items_active">
-              <a href="#">About</a>
+            <li class="menu-list__items">
+              <a href="./about.html">About</a>
             </li>
             <li class="menu-list__items">
               <a href="./style.html">Styles</a>
@@ -37,15 +37,14 @@
               <a href="./gallery.html">Gallery</a>
             </li>
             <li class="menu-list__items"><a href="./blog.html">Blog</a></li>
-            <li class="menu-list__items">
+            <li class="menu-list__items menu-list__items_active">
               <a href="./contact.html">Contact</a>
             </li>
           </ul>
 
-
           <div class="menu-mobile">
             <select name="pets" id="menu-select">
-              <option >Navigation</option>
+              <option>Navigation</option>
               <option value="./index.html">Home</option>
               <option value="./about.html">About</option>
               <option value="./style.html">Styles</option>
@@ -57,54 +56,65 @@
         </nav>
       </header>
 
-      <section class="about-img">
-        <img src="./assets/smile.jpg" alt="image" />
+      <section class="contact-container grid">
+        <div class="contact">
+          <h1 class="title square">Contact Me</h1>
+          <p class="quotes">
+            Praesent commodo cursus magna, venenatis vestibulum. Donec id elit
+            non mi porta gravida at eget vel scelerisl consectetur etsie.
+          </p>
+          <p class="contact__text">
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec
+            ullamcorper nulla non metus auctor fringilla.
+          </p>
 
-        <h1 class="title square">About Me</h1>
-        <p class="quotes">
-          Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non
-          mi porta gravida at eget vel scelerisl consectetur etsie.
-        </p>
-
-        <div class="about-describe flex">
-          <div>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Donec
-              ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
-              porta gravida at eget metus. Vivamus sagittis lacus vel augue
-              laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.
-              Pellentesque ornare sem lacinia quam venenatis vestibulum.
-            </p>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Donec
-              ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
-              porta gravida at eget metus. Vivamus sagittis lacus vel augue
-              laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.
-              Pellentesque ornare sem lacinia quam venenatis vestibulum.Sed
-              posuere consectetur est at lobortis. Nullam id dolor id nibh
-              ultricies vehicula ut id elit. Lorem ipsum dolor sit amet,
-              consectetur rutrum fauci adipiscing elit.
-            </p>
-          </div>
-          <div>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Donec
-              ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
-              porta gravida at eget metus. Vivamus sagittis lacus vel augue
-              laoreet rutrum faucibus dolor auctor.
-            </p>
-            <p>
-              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-              vestibulum. Donec id elit non mi porta gravida at eget metus.
-              Donec ullamcorper nulla non metus auctor fringilla. Donec id elit
-              non mi porta gravida at eget metus. Vivamus sagittis lacus vel
-              augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.
-              Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras
-              mattis consectetur purus sit amet fermentum. Maecenas faucibus
-              mollis interdum.
-            </p>
-          </div>
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="name"
+              class="input contact-input__name"
+              placeholder="What's your name"
+              required
+            /><input
+              type="email"
+              name="email"
+              class="input contact-input__email"
+              placeholder="Email goes here"
+              required
+            />
+            <textarea
+              class="contact-textarea input"
+              placeholder="Whats this about?"
+              required
+            ></textarea>
+            <button class="contact-submit">Send Message</button>
+          </form>
         </div>
+        <aside class="menu">
+          <h2 class="title square">Networks</h2>
+          <ul>
+            <li class="contact-menu-item">
+              <a href="#">Follow Me on Facebook</a>
+            </li>
+            <li class="contact-menu-item">
+              <a href="#">Hanging out on Dribbble</a>
+            </li>
+            <li class="contact-menu-item">
+              <a href="#">Tweeting up a storm</a>
+            </li>
+          </ul>
+          <div class="menu-description">
+            <p class="menu-text">
+              Vestibulum id ligula porta felis euismod semper. Maecenas sed diam
+              eget risus varius blandit sit ametr nulla non metus auctor
+              fringilla.
+            </p>
+            <div>
+              <a href="#" class="arrow">See the Full Theme Styles</a>
+            </div>
+          </div>
+        </aside>
       </section>
 
       <footer class="footer flex">
@@ -134,6 +144,7 @@
         </div>
       </footer>
     </section>
+
     <script src="./js/script.js"></script>
  
  </body>

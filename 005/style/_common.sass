@@ -1,11 +1,52 @@
 @import  "variables"
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap')
+
 .grid
     display: grid
 
 .flex
     display: flex
 
+.link-arrow
+        display: block
+        text-decoration: none
+        font-size: 1em
+        color: $dark-blue
+        margin: 20px  0
+        padding-left: 20px
+        transition: all .7s ease
+        position: relative
+        &::before
+            content: "→"
+            position: absolute
+            left: 0
+            top: 0
+            bottom: 0
+            color: $orange
+        &:hover
+            cursor: pointer
+            color: $orange !important
+
+.line
+    width: 100%
+    height: 1px
+    background-color: $menu-line
+.line-dashed
+    width: 100%
+    height: 1px
+    border-bottom: 1px dashed $menu-line
+    margin: 50px 0
+.line-dotted
+    width: 100%
+    height: 1px
+    border-bottom: 1px dotted $menu-line
+.line
+    width: 100%
+    height: 1px
+    background-color: $menu-line
+.orange
+    color: $orange
 .square
     position: relative
     &::after
